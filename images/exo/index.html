@@ -11,8 +11,23 @@
     <main>
       <ul>
         <li>First image</li>
+        <picture>
+          <source media="(min-width: 300px)" srcset="public/1-s.jpeg">
+          <source media="(min-width: 1000px)" srcset="public/1-m.jpeg">
+          <img src="public/1-l.jpeg" loading="lazy" fetchpriority="high" alt="photo de montagne et desert">
+        </picture>
         <li>Second image</li>
+        <picture>
+          <source media="(min-width: 300px)" srcset="public/2-s.jpeg">
+          <source media="(min-width: 1000px)" srcset="public/2-m.jpeg">
+          <img src="public/2-l.jpeg" loading="lazy" fetchpriority="high"  alt="photo de gens qui rigolent">
+        </picture>
         <li>Third image</li>
+        <picture>
+          <source media="(min-width: 300px)" srcset="public/3-s.jpeg">
+          <source media="(min-width: 800px)" srcset="public/3-m.jpeg">
+          <img src="public/3-l.jpeg" width="1000" loading="lazy" fetchpriority="high" alt="photos de montagnes enneigés">
+        </picture>
         <li>Last image</li>
       </ul>
     </main>
